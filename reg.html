@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. Louis College Valenzuela Registration</title>
+  <link rel="icon" href="slcv1.jpg">
+  <style>
+    /* Add your custom styles here */
+    body {
+      background-image: url("images/back.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .form-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container h1 {
+      text-align: center;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group label {
+      margin-right: 16px;
+    }
+
+
+    .form-container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: inline-start;
+      text-align: center;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .center-button {
+        text-align: center;
+    }
+/* NAVIGATION BAR */
+        nav {
+    background-color: green;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+    .logo {
+    height: 80px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    }
+
+    .menu {
+    list-style-type: none;
+    margin-right: 70px;
+    padding: 0;
+    text-align: right; /* Align the list items to the left */
+    position: absolute;
+    right: 0;
+    }
+
+    .menu li {
+    display: inline-block;
+    margin-left: 10px;
+    }
+
+    .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    }
+
+
+    .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 5px 0;
+    margin-top: px;
+    margin-left: 0; /* Align the dropdown menu to the left */
+    z-index: 1;
+    }
+
+    .dropdown-menu a {
+    display: block;
+    color: #e74242;
+    padding: 89px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+    background-color: #555;
+    }
+
+    .dropdown-menu li {
+    display: block;
+    margin: 0;
+    text-align: left; /* Align the dropdown menu items to the left */
+    }
+
+    .dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="elem.html">Elem</a></li>
+          <li><a href="jhs.html">JHS</a></li>
+          <li><a href="senior.html">SHS</a></li>
+          <li><a href="college.html">College</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">Facilities</a>
+            <ul class="dropdown-menu">
+                <li><a href="library.html">Library</a></li>
+                <li><a href="science.html">Science Lab</a></li>
+                <li><a href="comlab.html">Computer Lab</a></li>
+                <li><a href="rooftop.html">Rooftop</a></li>
+                <li><a href="minihotel.html">Mini Hotel</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+    
+  <div class="form-container">
+    <h1>Registration Form</h1>
+    <form action="done.html">
+
+      <div class="input-field">
+        <label for="toRegister">To Register:</label>
+        <select id="toRegister" name="toRegister">
+          <option value="">SELECT</option>
+          <option value="Grade School">Grade School</option>
+          <option value="Junior High School">Junior High School</option>
+          <option value="Senior High School">Senior High School</option>
+          <option value="College">College</option>
+        </select>
+      </div>
+
+      <div class="input-field">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+
+      <div class="input-field">
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName">
+      </div>
+
+      <div class="input-field">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+      </div>
+
+      <div class="input-field">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+      </div>
+
+      <div class="input-field">
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber">
+      </div>
+
+      <div class="input-field">
+        <label for="studentNumber">Student Number:</label>
+        <input type="text" id="studentNumber" name="studentNumber">
+      </div>
+
+      <div class="checkbox-group">
+        <label>High School Level:</label>
+        <input type="checkbox" id="hsFirstYear" name="highSchoolLevel[]" value="First Year">
+        <label for="hsFirstYear">1st Year</label>
+        <input type="checkbox" id="hsSecondYear" name="highSchoolLevel[]" value="Second Year">
+        <label for="hsSecondYear">2nd Year</label>
+        <input type="checkbox" id="hsThirdYear" name="highSchoolLevel[]" value="Third Year">
+        <label for="hsThirdYear">3rd Year</label>
+        <input type="checkbox" id="hsFourthYear" name="highSchoolLevel[]" value="Fourth Year">
+        <label for="hsFourthYear">4th Year</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>Grade School Level:</label>
+        <input type="checkbox" id="kinder" name="gradeSchoolLevel[]" value="Kinder">
+        <label for="kinder">Kinder</label>
+        <input type="checkbox" id="grade1" name="gradeSchoolLevel[]" value="Grade 1">
+        <label for="grade1">Grade 1</label>
+        <input type="checkbox" id="grade2" name="gradeSchoolLevel[]" value="Grade 2">
+        <label for="grade2">Grade 2</label>
+        <input type="checkbox" id="grade3" name="gradeSchoolLevel[]" value="Grade 3">
+        <label for="grade3">Grade 3</label>
+        <input type="checkbox" id="grade4" name="gradeSchoolLevel[]" value="Grade 4">
+        <label for="grade4">Grade 4</label>
+        <input type="checkbox" id="grade5" name="gradeSchoolLevel[]" value="Grade 5">
+        <label for="grade5">Grade 5</label>
+        <input type="checkbox" id="grade6" name="gradeSchoolLevel[]" value="Grade 6">
+        <label for="grade6">Grade 6</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>College Level:</label>
+        <input type="checkbox" id="collegeFirstYear" name="collegeLevel[]" value="1st Year">
+        <label for="collegeFirstYear">1st Year</label>
+        <input type="checkbox" id="collegeSecondYear" name="collegeLevel[]" value="2nd Year">
+        <label for="collegeSecondYear">2nd Year</label>
+        <input type="checkbox" id="collegeThirdYear" name="collegeLevel[]" value="3rd Year">
+        <label for="collegeThirdYear">3rd Year</label>
+        <input type="checkbox" id="collegeFourthYear" name="collegeLevel[]" value="4th Year">
+        <label for="collegeFourthYear">4th Year</label>
+      </div>
+
+      <div class="input-field">
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="">SELECT</option>
+          <option value="bscs">BSCS</option>
+          <option value="bsais">BSAIS</option>
+          <option value="bshm">BSHM</option>
+          <option value="bsoa">BSOA</option>
+          <option value="bsmm">BSMM</option>
+          <option value="bsfm">BSFM</option>
+          <option value="bsghrm">BSGHRM</option>
+        </select>
+      </div>
+
+      <div class="input-field">
+        <label for="payment">Payment:</label>
+        <input type="checkbox" id="installment">
+        <label for="installment">Installment</label>
+        <input type="checkbox" id="fullPayment" name="payment[]" value="Full Payment">
+        <label for="fullPayment">Full Payment</label>
+      </div>
+
+      <div class="input-field">
+        <label for="lastSchoolAttended">Last School Attended:</label>
+        <input type="text" id="elementarySchool" name="lastSchoolAttended[]" placeholder="Elementary School">
+        <input type="text" id="highSchool" name="lastSchoolAttended[]" placeholder="High School">
+        <input type="text" id="seniorHighSchool" name="lastSchoolAttended[]" placeholder="Senior High School">
+        <input type="text" id="college" name="lastSchoolAttended[]" placeholder="College">
+      </div>
+
+      <div class="checkbox-group">
+        <label>Scholar Background:</label>
+        <input type="checkbox" id="scholarElementary" name="scholarBackground[]" value="Elementary">
+        <label for="scholarElementary">Elementary</label>
+        <input type="checkbox" id="scholarHighSchool" name="scholarBackground[]" value="High School">
+        <label for="scholarHighSchool">High School</label>
+        <input type="checkbox" id="scholarSeniorHigh" name="scholarBackground[]" value="Senior High">
+        <label for="scholarSeniorHigh">Senior High</label>
+        <input type="checkbox" id="scholarCollege" name="scholarBackground[]" value="College">
+        <label for="scholarCollege">College</label>
+      </div>
+
+      <div class="center-button">
+        <input type="submit" value="Submit">
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
